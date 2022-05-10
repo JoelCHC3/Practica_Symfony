@@ -1,0 +1,28 @@
+<h1>{{titol}}</h1>
+<h2>{{'Tots els usuaris'}}</h2>
+{{dump(users)}} {#com el vardump pero a twig. Mostra info d'un array#}
+<ul>
+    {% for user in users %}
+        <li>{{ user.name }}</li>
+    {% endfor %}
+</ul>
+
+<h2>{{'Usuari per id'}}</h2>
+{{dump(userById)}}
+<ul> 
+    <li>{{userById.password}}</li>
+</ul>
+
+<h2>{{'Usuaris per columna'}}</h2>
+{{dump(userBy)}}
+<ul>
+    {% for userBy in userBy %}
+        <li>{{ userBy.name }}</li>
+    {% endfor %}
+</ul>
+
+<h2>{{'Un usuari per columna'}}</h2>
+{{dump(userOneBy)}}
+<ul> 
+    <li>{{userOneBy.name}}</li>
+</ul>
