@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block title %}Afegir proveidor{% endblock %}
+{% block body %}
+<div class="row mt-4"> {#margin top pel titol#}
+    <div class="col-md-3">{#3 col margin (esquerra)#}</div>
+    <div class="col-md-6">
+        {#6 columnes per les dades#}
+        <h1>{{titol}}</h1>
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+    </div>
+    <div class="col-md-3">{#3 col margin (dreta)#}</div>
+</div>
+
+{% endblock %}

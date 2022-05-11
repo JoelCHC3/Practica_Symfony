@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+{% block title %}Eliminar proveidor{% endblock %}
+
+{% block body %}
+<h1>{{titol}}</h1>
+Siusplau, confirma que vols eliminar aquest proveidor. Pensa que aquesta accio es irreversible!
+<br></br>
+
+<li>ID: {{proveidor.id}}</li>
+<li>Nom: {{ proveidor.nom }}</li>
+<li>Correu: {{ proveidor.correu }}</li>
+<li>Telefon: {{ proveidor.telefon }}</li>
+<li>Tipus: {{ proveidor.tipus }}</li>
+<li>Alta: {{ proveidor.alta|date('Y-m-d') }}</li>
+<li>Actiu: {{ proveidor.actiu }}</li>
+<br></br>
+{{ form_start(form) }}
+{{ form_widget(form) }}
+{{ form_end(form) }}
+
+{% endblock %}

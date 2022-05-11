@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% block title %}Consultar proveidors{% endblock %}
+
+{% block body %}
+<h1>{{titol}}</h1>
+<ul>
+    {% for proveidor in dades %}
+        Proveidor amb ID: {{proveidor.id}}
+        <li>Nom: {{ proveidor.nom }}</li>
+        <li>Correu: {{ proveidor.correu }}</li>
+        <li>Telefon: {{ proveidor.telefon }}</li>
+        <li>Tipus: {{ proveidor.tipus }}</li>
+        <li>Alta: {{ proveidor.alta|date('Y-m-d') }}</li>
+        <li>Darrera edicio: {{ proveidor.edicio|date('Y-m-d') }}</li>
+        <li>Actiu: {{ proveidor.actiu }}</li>
+        <br></br>
+    {% endfor %}
+</ul>
+{% endblock %}
