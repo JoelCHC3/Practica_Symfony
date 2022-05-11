@@ -1,5 +1,5 @@
 # Pràctica Symfony
- Pràctica de Symfony per l'empresa "Viajes para ti"
+ Pràctica de Symfony per l'empresa "Viajes para ti".
 
 ## Descripció
 Petita aplicació pensada per gestionar els proveïdors de l'empresa. Els proveïdors s'emmagatzemen en una base de dades MySQL, i es poden:
@@ -16,11 +16,13 @@ Petita aplicació pensada per gestionar els proveïdors de l'empresa. Els prove�
 * Versió de MySQL: 8.0.29
 
 ## Fitxers importants
-* Practica_Symphony: Conté tot el projecte.
+* Practica_Symphony: Directori que conté tot el projecte.
 * Diari_Symfony.pdf: Document amb observacions i comentaris que he anat afegint a mode de diari per veure el procediment seguit i els errors amb què m'he trobat, així com la solució d'aquests.
 * Valoració.txt: Petita valoració sobre la feina feta.
 
 ## Fonts consultades
 * Documentació oficial de Symfony
+* Documentació oficial de Bootstrap
+* Documentació oficial de Twig
 * Stack Overflow
 * https://www.youtube.com/channel/UC60_XV7zboe5n_PGtM3dfrQ/playlists
